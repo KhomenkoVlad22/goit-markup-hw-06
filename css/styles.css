@@ -72,6 +72,18 @@ img {
 .list {
   list-style: none;
 }
+.visually-hidden{
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+padding: 0;
+clip: rect(0 0 0 0);
+clip-path:  inset(50%);
+margin: -1px;
+}
 
 /* Header */
 .header {
@@ -561,7 +573,7 @@ img {
 .modal{
   position: relative;
   width: 528px;
-  height: 581px;
+  padding: 40px;
   background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -582,4 +594,108 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--text-color-wht);
   cursor: pointer;
+}
+/* Modal-form */
+.registration {
+
+  text-align: center;
+  align-items: center;
+  
+}
+
+.registration-title {
+    max-width: 30px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1,15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--text-color-blck);
+    margin-bottom: 30px;
+}
+
+.registration-group {
+  margin-bottom: 20px;
+}
+.registration-agreement{
+  display: flex;
+  align-items: center;
+  gap:8px;
+  margin-bottom: 30px;
+}
+
+.registration-wrap {
+  position: relative;
+  display: block;
+  margin-bottom: 28px ;
+
+}
+.registration-wrap:last-child{
+  margin-bottom: 0;
+}
+
+.registration-label {
+  display: block;
+  text-align: left;
+}
+
+.registration-input, 
+.registration-message {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  height: 40px;
+  width: 100%;
+  padding-top: 11px;
+  padding-left: 42px;
+  padding-bottom: 11px;
+  border-radius: 4px;
+}
+.registration-message{
+  resize: none;
+  width: 100%;
+  height: 120px;
+  padding: 10px;
+}
+
+.registration-icon {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;  
+}
+
+.registration-agreement-check{
+  opacity: 0;
+  fill: var(--text-color-wht);
+  background-color: var(--accent-color);
+}
+.registration-checkbox:checked+.registration-agreemen-icon .registration-agreement-check {
+  opacity: 1;
+  
+}
+.registration-checkbox:checked + .registration-agreemen-icon .registration-agreement-uncheck
+{
+  opacity: 0;
+}
+
+
+.registration-btn {
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--text-color-wht);
+  cursor: pointer;
+
 }
