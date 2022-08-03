@@ -716,7 +716,6 @@ margin: -1px;
 }
 
 .footer-email-input{
-  position: absolute;
     width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -726,8 +725,10 @@ margin: -1px;
     color: var(--text-color-wht);
     padding: 16px 15px;
 }
-.footer-email-item{
-display: flex;
-align-items: center;
-text-align: center;
+.footer-email-list{
+ display: flex;
+gap: 12px;
+}
+.btn-icon{
+  padding-left: 10px;
 }
