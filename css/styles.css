@@ -726,7 +726,8 @@ margin: -1px;
     color: var(--text-color-wht);
     padding: 16px 15px;
 }
-.footer-email-list{
-  display: block;
-  
+.footer-email-item{
+display: flex;
+align-items: center;
+text-align: center;
 }
